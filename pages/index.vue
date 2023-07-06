@@ -1,15 +1,13 @@
 <template>
   <div>
-gggg
+<h1>Home</h1>
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
