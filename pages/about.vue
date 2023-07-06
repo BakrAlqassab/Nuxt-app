@@ -1,13 +1,16 @@
-<template lang="">
+<template>
     <div>
-        
+        <h1>About</h1>
     </div>
 </template>
-<script>
-export default {
-    
-}
+  
+<script setup>
+
 </script>
+  
 <style scoped>
-    
+h1 {
+
+    color: red;
+}
 </style>
