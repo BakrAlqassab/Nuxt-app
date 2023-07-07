@@ -1,8 +1,8 @@
 <template>
     <div>
-        <header>
-            <nav>
-                <nuxt-link to="/"> Nuxt Project</nuxt-link>
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4 flex justify-between">
+                <nuxt-link to="/" class="font-bold"> Nuxt Project</nuxt-link>
                 <ul>
                     <li><nuxt-link to="/">Home</nuxt-link></li>
                     <li><nuxt-link to="/about">About</nuxt-link></li>
