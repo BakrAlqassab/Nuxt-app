@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- <Header/> -->
-        <h1>About</h1>
+        <h1>Products</h1>
     </div>
 </template>
   
@@ -9,9 +9,4 @@
 
 </script>
   
-<style scoped>
-h1 {
-
-    color: red;
-}
-</style>
+<style scoped></style>
