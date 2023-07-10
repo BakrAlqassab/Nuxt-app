@@ -24,10 +24,10 @@
     color: #12b488;
 }
 footer {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     text-align: center;
-    width: 95%;
+    width: 95%; */
     overflow: hidden;
 }
 </style>
