@@ -14,11 +14,17 @@
 
 definePageMeta({
     layout: 'products'
-})
+});
+
+
 
 //fetch the data
 
 const { data: products } = await useFetch('https://fakestoreapi.com/products');
+
+useHead({
+    title :"Products page || Merch"
+})
 
 </script>
   
