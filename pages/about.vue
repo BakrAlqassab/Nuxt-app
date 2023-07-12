@@ -2,6 +2,7 @@
     <div>
         <!-- <Header/> -->
         <h1>About</h1>
+        {{ data }}
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -12,11 +13,12 @@
 </template>
   
 <script setup>
-
+const { data } = await useFetch('/api/products')
 </script>
   
 <style scoped>
 h1 {
 
     color: red;
-}</style>
+}
+</style>

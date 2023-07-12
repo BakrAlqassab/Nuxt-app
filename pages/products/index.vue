@@ -17,13 +17,16 @@ definePageMeta({
 });
 
 
-
 //fetch the data
 
-const { data: products } = await useFetch('https://fakestoreapi.com/products');
+const { data: products } = await useFetch('/api/products', { headers: { 'Accept': 'application/json' }, server: false });
+
+if (!products.value) {
+    throw createError({ statusCode: 404, statusMessage: "Products not found!.", fatal: true })
+}
 
 useHead({
-    title :"Products page || Merch"
+    title: "Products page || Merch"
 })
 
 </script>

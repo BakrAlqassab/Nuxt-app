@@ -14,11 +14,16 @@
 </template>
 <script setup >
 const { id } = useRoute().params;
-const uri = 'https://fakestoreapi.com/products/' + id;
+const uri = '/api/product/';
+
+
 
 // fetch the product
 
-const { data: product } = await useFetch(uri, { key: id })
+const { data: product } = await useFetch(uri, { key: id ,
+ method :'post',
+ body: {id: id}
+ })
 if (!product.value) {
 
     throw createError({ statusCode: 404, statusMessage: "Product not found!.", fatal: true })

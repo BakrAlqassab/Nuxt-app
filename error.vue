@@ -10,6 +10,6 @@
 
 defineProps(['error']);
 
-const HandleClearError = () => clearError({redirect: '/'})
+const HandleClearError = () => clearError({ redirect: '/' })
 </script>
 <style scoped></style>
